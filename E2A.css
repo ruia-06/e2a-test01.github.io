@@ -93,17 +93,20 @@ ul li {
     padding: 5px 0 5px 10px;
 }
 
+/* 4. コンポーネント (Components) の中の該当箇所 */
+
 /* テーマパーク強調テキスト */
 .highlight-text {
-    /* 濃いグレーに戻す変更が適用されています */
-    background-color: transparent;
+    /* 濃いグレーに戻し、特殊な装飾をすべて取り除きます */
+    background-color: transparent; /* 背景色なし */
     border-radius: 0;
-    color: #444; /* 既存の濃いグレー */
-    display: inline;
-    font-size: 1.1em;
-    font-weight: bold;
+    color: var(--color-text-dark); /* または #444 でも可。基本的な濃いグレー */
+    display: inline; /* インライン表示 */
+    font-size: 1em; /* 標準の文字サイズに戻す (1.1em → 1em) */
+    font-weight: bold; /* 太字のみを残す */
     padding: 0;
 }
+
 
 /* 注釈 (現在HTMLにはありませんが、残しておきます) */
 .note {
